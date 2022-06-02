@@ -21,7 +21,7 @@ public class BackendController {
     }
 
     @RequestMapping(value = "/person/{name}", method = RequestMethod.GET)
-    public Person personById(@PathVariable String name) {
+    public Person personByName(@PathVariable String name) {
         return personMap.get(name);
     }
 
